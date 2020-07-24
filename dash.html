@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilo da pagina -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Script da pagina -->
+    <script src="js/dash.js"></script>
+
+    <title>Dashboard</title>
+</head>
+
+<body onload="validarSessao()">
+
+    <div class="container">
+        <h3>DashCard System</h3>
+        <hr>
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="d-inline">
+                    <img class="foto rounded" id="foto" src="...">
+                </div>
+                <div class="d-inline">
+                    <span id="nome" class="ml-3">...</span>
+                </div>
+            </div>
+            <div class="col text-right">
+                <button class="btn btn-primary" id="logoff" onclick="logoff()">Logoff</button>
+            </div>
+        </div>
+
+        <div class="mt-5 border border-primary rounded">
+            <span class="bg-primary text-white rounded aba">Selecione seu Relatório</span>
+            <ul class="lista-relatorios">
+                <li><a href="relevento.html">Relatório de Eventos por período</a></li>
+                <li><a href="relconsolidado.html">Relatório Consolidado por Alarmes</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

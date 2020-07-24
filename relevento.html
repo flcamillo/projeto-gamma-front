@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Script da pagina -->
+    <script src="js/relevento.js"></script>
+
+    <title>Relatório de Eventos</title>
+</head>
+
+<body onload="validarSessao()">
+
+    <div class="container">
+
+        <h3>EventDash - Relatório de Eventos</h3>
+        <hr>
+        <div class="row align-items-center">
+            <div class="col text-right">
+                <button class="btn btn-primary" id="logoff" onclick="logoff()">Logoff</button>
+            </div>
+        </div>
+        
+        <form id="form-periodo">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inicio">Início</label>
+                    <input type="date" class="form-control" id="inicio" name="inicio">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="termino">Término</label>
+                    <input type="date" class="form-control" id="termino" name="termino">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="pesquisar" onclick="pesquisarEventos(event)">Gerar Relatório</button>
+        </form>
+        <div id="relatorio" class="mt-5"></div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

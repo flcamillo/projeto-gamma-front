@@ -1,0 +1,16 @@
+.foto {
+    height: 80px;
+}
+
+.aba {
+    position: relative;
+    top: -16px;
+    left: 16px;
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .lista-relatorios li {
+    list-style-type: none;
+    padding: 10px;
+  }

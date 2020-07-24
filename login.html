@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Script da pagina -->
+    <script src="js/login.js"></script>
+
+    <title>Login</title>
+</head>
+<body>
+    
+    <div class="container vh-100">
+        <div class="row vh-100">
+            <div class="col-4 bg-light p-5 my-auto mx-auto border border-primary rounded text-center">
+                <form>
+                    <p>Sign In</p>
+                    <hr>
+                    <input class="form-control mb-4" type="text" id="login" placeholder="Email ou RACF">
+                    <input class="form-control mb-4" type="password" id="pwd" placeholder="Senha">
+                    <p id="mensagem"></p>
+                    <button type="submit" class="btn btn-outline-primary" onclick="fazerLogin(event)">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
